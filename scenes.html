@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>"Culturecene: Respect The Craft"</title>
+<meta name='description' content='The Beginners Guide to Hip-Hop'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Great%20Vibes" rel='stylesheet'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/culturecene.css">
+</head>
+<body>
+  <header>
+    <div class="first" style= "padding: 1% 5% 1% 5%;">
+    <nav class="navbar nav">
+        <div class="container">
+          <div class="row">
+            <img src="img/logo.png" alt="Logo" class="toplogo d-sm-none d-md-inline-block">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="history.html">History</a></li>
+                <li role="presentation" class="dropdown nav-item">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Scenes</a>
+                <ul class="dropdown-menu">
+                    <li> <a href ="scenes.html">Map Overview</a></li>
+                    <li> <a href ="east.html">East Coast &amp; The Mid-West</a></li>
+                    <li> <a href ="west.html">West Coast</a></li>
+                    <li> <a href ="south.html">The South</a></li>
+                </ul>
+                <li class="nav-item"><a href="about.html">About</a></li>
+            </ul>
+        </div>
+     </div>
+    </nav>
+    </div>
+  </header>
+    <main class="aboutus" style="display: block !important;">
+      <div class="about">
+    <h1 id="aboutTitle"> Scenes Map </h1>
+    <p> Check out the scenes of hip-hop across the USA: our scenes are not classified solely on the geography (although it may look that way!) but because each scene has a unique sound, style and approach to lyrical content, production and presence in the overall scene.</p></div>
+    <br><div class="map" style="width: 100%;"><div id="mapid"></div></div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script>
+    var mymap = L.map('mapid').setView([37.2756537, -104.6561154], 4);
+    var basemap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    }).addTo(mymap);
+    var marker = L.marker([37.77459, -122.41957]).addTo(mymap); //San Francisco
+    marker.bindPopup("<b>San Francisco:</b>Home of Hyphy").closePopup();
+    marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        });
+    marker.url = 'west.html'
+    marker.on('click', function(){
+    window.location = (this.url);
+    });
+    var marker = L.marker([34.04325, -118.24968]).addTo(mymap); //Los Angeles
+    marker.bindPopup("<b>Los Angeles:</b>Synths & Lowriders").closePopup();
+    marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        });
+    marker.url = 'west.html'
+    marker.on('click', function(){
+    window.location = (this.url);
+    });
+    var marker = L.marker([29.76589, -95.3697]).addTo(mymap); //Houston
+    marker.bindPopup("<b>Houston:</b>Chopped'n'Screwed").closePopup();
+    marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        });
+    marker.url = 'south.html'
+    marker.on('click', function(){
+    window.location = (this.url);
+    });
+    var marker = L.marker([29.95106, -90.07153]).addTo(mymap); //New Orleans
+    marker.bindPopup("<b>New Orleans:</b>Bounce To This").closePopup();
+    marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        });
+    marker.url = 'south.html'
+    marker.on('click', function(){
+    window.location = (this.url);
+    });
+    var marker = L.marker([33.7496, -84.38798]).addTo(mymap); //Atlanta
+    marker.bindPopup("<b>Atlanta:</b>The soul of hip-hop").closePopup();
+    marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        });
+    marker.url = 'south.html'
+    marker.on('click', function(){
+    window.location = (this.url);
+    });
+    var marker = L.marker([42.33101, -83.04633]).addTo(mymap); //Detroit
+    marker.bindPopup("<b>Detroit:</b>Lyricists Represent!").closePopup();
+    marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        });
+    marker.url = 'east.html'
+    marker.on('click', function(){
+    window.location = (this.url);
+    });
+    var marker = L.marker([41.87692, -87.63034]).addTo(mymap); //Chicago
+    marker.bindPopup("<b>Chicago:</b>Wordsmiths & Drill").closePopup();
+    marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        });
+    marker.url = 'east.html'
+    marker.on('click', function(){
+    window.location = (this.url);
+    });
+    var marker = L.marker([40.71446, -74.00646]).addTo(mymap); //New York City
+    marker.bindPopup("<b>New York City:</b>The Mecca").closePopup();
+    marker.on('mouseover', function (e) {
+            this.openPopup();
+        });
+        marker.on('mouseout', function (e) {
+            this.closePopup();
+        });
+    marker.url = 'east.html'
+    marker.on('click', function(){
+    window.location = (this.url);
+    });
+    </script>  
+    <!--<div class="container-fluid">
+    <div class="map-responsive">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1-YAtFMxyyXzvCXYECR-u0hOOu-P8YLIN" width="640" height="480" frameborder="0" style="border:0"></iframe>
+    </div></div> -->
+      </main>
+  <footer>
+    <div class="bottom">
+        <h4> Designed by </h4>
+        <img src="img/leoLogo.png" alt="Designed by Studio Leo">
+    </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </footer>  
+</body>
+</html>
