@@ -31,7 +31,7 @@
             </ul>
         </div>
     </nav>
-      <img src="img/logo.png" alt="Culturecene Logo" class="logo">
+      <img src="img/logo.png" alt="Culturecene Logo" class="img-fluid logo">
       <img src="https://images.unsplash.com/photo-1589929168117-cd9ec5f27ab7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="LL Cool J Mural" class="history">
       <h1> This is Hip-Hop. <br> &nbsp;&nbsp;&nbsp;Study the Culture. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Know the Scenes. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is Culturecene.</h1>
       <div id="landing" class="button-box">
@@ -51,7 +51,7 @@
           </div>
 
         	</a>
-    </div>
+      </div>
        
     </div>
   </header>
