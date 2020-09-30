@@ -1,0 +1,760 @@
+.first{
+  box-sizing: border-box;
+  background-color:#ffe8e0;
+  padding: 1% 5% 5% 1%;
+}
+
+.toplogo {
+  width:30%;
+  display: none;
+  position: relative;
+  margin: 0 auto;
+}
+
+.first .logo {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.first .history{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  display: none;
+}
+
+.first h1{
+  color: #93cacb;
+  width: auto;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 2em;
+}
+
+.nav-pills .nav-item a { 
+  color:#93cacb;
+  font-weight: bold;
+}
+
+.nav-pills .nav-item a:hover{
+    background-color:#93cacb;
+    color: #FFFFFF;
+}
+
+.nav-pills .nav-item a:focus{
+    background-color:#93cacb;
+    color: #FFFFFF;
+}
+
+.nav-pills .nav-item .dropdown-menu {
+  background-color: #93cacb;
+  margin-top: -1.5%;
+  border: none;
+  box-shadow: none;
+}
+
+.nav-pills .nav-item .dropdown-menu a{
+  color:#FFFFFF;
+  font-weight: bold;
+}
+
+.nav-pills .nav-item .dropdown-menu a:hover{
+  color:#93cacb;
+  background-color: #ffe8e0;
+  font-weight: bold;
+}
+
+.nav-pills .nav-item .dropdown-menu a:focus{
+  color:#93cacb;
+  background-color: #ffe8e0;
+  font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 40px;
+}
+
+.button .bottom {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 100%;
+    height: 100%;
+    background-color: #93cacb;
+    display: block;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.button .top {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px 34px 22px 34px;
+    border: 2px solid #04049d;
+}
+
+.button-dark .top {
+    border: 2px solid #fff;
+}
+
+.button .top .label {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #04049d;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.button-dark .top .label {
+    color: #fff;
+}
+
+.button:hover .bottom {
+    left: 0;
+    top: 0;
+    background-color: #f3f3f3;
+}
+
+.button:hover .top .label {
+    color: #2acdc1;
+}
+
+.button-border {
+    position: absolute;
+    background-color: #2acdc1;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.button:hover .top .button-border-left,.button:hover .top .button-border-right {
+    height: calc(100% + 2px);
+}
+
+.button:hover .top .button-border-top,.button:hover .top .button-border-bottom {
+    width: calc(100% + 2px);
+}
+
+.button-border-left {
+    left: -2px;
+    bottom: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-top {
+    left: -2px;
+    top: -2px;
+    width: 0;
+    height: 2px;
+}
+
+.button-border-right {
+    right: -2px;
+    top: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-bottom {
+    right: -2px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+}
+
+.button-box{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+footer {
+  background-color: #000000;
+}
+footer .bottom{
+  background-color: #000000;
+  width: 100%;
+  padding-top: 2%; 
+}
+
+.bottom h4{
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1em;
+}
+
+.bottom img{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+
+/* ------- History ------- */
+.historyGallery{
+  background-color: #fff0e0;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  float: left;
+  margin: 0;
+}
+
+.historyContent{
+  background-color: #feffe0;
+  display: block;
+  text-align: center;
+  
+}
+
+.historyContent h1, h2, h3 {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  padding: 2%;
+}
+.historyContent p {
+  position: relative;
+  display: block;
+  margin: auto;
+  text-align: justify;
+  width: 60%;
+}
+
+.historyContent .embed-responsive-16by9{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+.polaroid{
+  width: 75%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.polaroid a {
+  background: #ffffff;
+  display: inline-block;
+  margin: 5.5% 7.5% 3%;
+  padding: 1.5% 1.5% 3%;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Great Vibes';
+  font-weight: bold;
+  width: 100%;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+}
+
+.polaroid a:after {
+  color: #333;
+  font-size: 1em;
+  content: attr(title);
+  position: relative;
+  top: 1.5%;
+}
+
+.polaroid img {
+  display: block;
+  width: 100%;
+}
+
+.polaroid a:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
+  font-size: 1.5em;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+}
+
+.button-box .scenes {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.scenes .button {
+    display: flex;
+    margin-bottom: 2%;
+    position: relative;
+}
+
+.scenes .button .top .label {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #04049d;
+    font-size: .8em;
+    line-height: 110%;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+/* ------- Scenes ------- */
+
+.about {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.map{
+    display: block;
+    width: 70%;
+}
+
+#mapid {height: 480px;}
+
+
+/* ------- Scene Pages ------- */
+.contents {
+  background-color:#feffe0;
+  padding: 2% 10%;
+}
+
+.contents h1{
+  font-weight: bold;
+}
+
+.sceneText {
+  text-align: justify;
+}
+
+.embed-responsive-4by3 {
+  width: 100%;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+  margin-top: 5%;
+  position: relative;
+  display: block;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ------- About ------- */
+.about {
+  width: 60%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.about #aboutTitle{
+  position: relative;
+  margin: 0 auto;
+}
+
+.aboutus {
+  background-color: #fff0e0;
+  padding: 2%;
+}
+
+@media screen and (min-width: 768px){
+  .first{
+    padding: 1% 5% 10% 5%;
+}
+
+.toplogo {
+  display: block;
+  width:40%;
+  display: none;
+  position: relative;
+  margin: 0 auto;
+}
+
+  .first .history{
+    position: relative;
+    left: 1%;
+    float:right;
+    margin-right: 5%;
+    width: 35%;
+    display: none;
+}
+  .first h1{
+    color: #93cacb;
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    text-align: left;
+    font-size: 2.7em;
+}
+  .button-box{
+    position: relative;
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: -2%;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+  nav .nav-pills{
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+}
+  .nav-pills .nav-item a {
+    font-size: 1.5em;
+}
+
+  .bottom img{
+  width: 30%;
+}
+  
+/* ------- History ------- */
+ 
+.historyGallery{
+  position: relative;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
+.historyContent{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.historyContent h1, h2, h3 {
+  display: inline-block;
+}
+.historyContent p {
+  display: inline-block;
+  margin: 1% 1% 1% 3%;
+}
+  .polaroid{
+    width: 35%;
+    display: inline-block;
+  }
+
+.polaroid img {
+  display: inline-block;
+}
+
+/* ------- Scenes Pages ------- */
+  
+  .map{
+    display: block;
+    width: 90%;
+}
+  
+  .wrapper{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+#carouselExampleIndicators {
+  display: flex;
+  width: 100%;
+  margin-left: 1%;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+.first{
+    box-sizing: border-box;
+    padding: 1% 5% 20% 5%;
+}
+  .first .logo {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    top: 40%;
+    right: -5%;
+}
+  .first h1{
+    font-size: 2.7em;
+}
+  .first .history{
+    display: inline-block;
+}
+  .button-box{
+    margin-top: -2%;
+    margin-left: 10%;
+}
+
+  .nav-pills .nav-item .dropdown-menu {
+  background-color: #93cacb;
+}
+
+/* ------- History ------- */
+  main {
+  margin: 0;
+  display: flex;
+  background-color: grey; /*#fff0e0*/
+  min-height: 600px;
+}
+  aside{
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+    max-width: 30%;
+    padding-left: 2%;
+  }
+  
+  .polaroid {
+    width: 70%;
+  }
+  
+  .historyContent .embed-responsive-16by9 {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+    padding-bottom: 30%;
+    
+}
+  
+  .historyContent .embed-responsive-16by9 iframe {
+    height: 100%;
+    padding-bottom:10%;
+  }
+/* ------- Scenes Pages ------- */
+  .wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 2%;
+    width: 100%;
+  }
+  
+  .wrapper .embed-responsive-16by9 {
+  width: 40%;
+}
+
+#carouselExampleIndicators {
+  width: 55%;
+  position: relative;
+  flex-wrap: wrap;
+  margin-top: 0 !important;
+}
+  
+  .carousel-item {
+    height: 100%;
+  }
+  
+  .carousel-item img{
+    height: 100%;
+  }
+
+
+}
+
+@media screen and (min-width: 768px){
+  .first{
+    padding: 1% 5% 10% 5%;
+}
+
+.toplogo {
+  display: block;
+  width:40%;
+  display: none;
+  position: relative;
+  margin: 0 auto;
+}
+
+  .first .history{
+    position: relative;
+    left: 1%;
+    float:right;
+    margin-right: 5%;
+    width: 35%;
+    display: inline-block;
+}
+  .first h1{
+    color: #93cacb;
+    position: relative;
+    margin-left: 10%;
+    margin-bottom: 1%;
+    text-align: left;
+    font-size: 2em;
+}
+  .button-box{
+    position: relative;
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: -2%;
+}
+  nav .nav-pills{
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+}
+  .nav-pills .nav-item a {
+    font-size: 1.5em;
+}
+
+  .bottom img{
+  width: 30%;
+}
+  
+/* ------- History ------- */
+ 
+.historyGallery{
+  position: relative;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+
+.historyContent{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.historyContent h1, h2, h3 {
+  display: inline-block;
+}
+.historyContent p {
+  display: inline-block;
+  margin: 1% 1% 1% 3%;
+}
+  .polaroid{
+    width: 35%;
+    display: inline-block;
+  }
+
+.polaroid img {
+  display: inline-block;
+}
+
+/* ------- Scenes Pages ------- */
+  
+  .wrapper{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+#carouselExampleIndicators {
+  display: flex;
+  width: 100%;
+  margin-left: 1%;
+}
+
+}
+
+@media screen and (min-width: 1024px){
+.first{
+    box-sizing: border-box;
+    padding: 1% 5% 20% 5%;
+}
+  .first .logo {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30%;
+    position: relative;
+    top: 40%;
+    right: -5%;
+}
+  .first h1{
+    font-size: 2.7em;
+}
+  .button-box{
+    margin-top: -2%;
+    margin-left: 10%;
+}
+
+  .nav-pills .nav-item .dropdown-menu {
+  background-color: #93cacb;
+}
+
+/* ------- History ------- */
+  main {
+  margin: 0;
+  display: flex;
+  background-color: grey; /*#fff0e0*/
+  min-height: 600px;
+}
+  aside{
+    display: flex;
+    flex-flow: column wrap;
+    width: 30%;
+    max-width: 30%;
+    padding-left: 2%;
+  }
+  
+  .polaroid {
+    width: 70%;
+  }
+  
+  .historyContent .embed-responsive-16by9 {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2%;
+    padding-bottom: 30%;
+    
+}
+  
+  .historyContent .embed-responsive-16by9 iframe {
+    height: 100%;
+    padding-bottom:10%;
+  }
+/* ------- Scenes Pages ------- */
+  .wrapper {
+    position: relative;
+    margin: 0 auto;
+    padding: 2%;
+    width: 100%;
+  }
+  
+  .wrapper .embed-responsive-16by9 {
+  width: 40%;
+}
+
+#carouselExampleIndicators {
+  width: 55%;
+  position: relative;
+  flex-wrap: wrap;
+  margin-top: 0 !important;
+}
+  
+  .carousel-item {
+    height: 100%;
+  }
+  
+  .carousel-item img{
+    height: 100%;
+  }
+
+
+}
